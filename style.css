@@ -108,7 +108,7 @@ body::before {
 }
 
 #typing-text {
-  color: var(--black);
+  color: black;
 }
 
 /* BUTTON */
