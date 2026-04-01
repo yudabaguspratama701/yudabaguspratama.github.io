@@ -108,7 +108,7 @@ body::before {
 }
 
 #typing-text {
-  color: var(--HITAM);
+  color: var(--black);
 }
 
 /* BUTTON */
