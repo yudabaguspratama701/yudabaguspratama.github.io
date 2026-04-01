@@ -96,3 +96,10 @@ document.querySelectorAll('nav a').forEach(anchor => {
       });
   });
 });
+
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".navbar nav");
+
+toggle.onclick = () => {
+  nav.classList.toggle("active");
+};
