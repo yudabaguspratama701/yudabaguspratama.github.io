@@ -167,11 +167,14 @@ section {
 }
 
 /* ABOUT */
-@media (max-width: 768px) {
-  .about p {
-    text-align: justify;
-  }
+.about {
+  text-align: left;
 }
+
+.about p {
+  text-align: justify;
+}
+
 }
 
 /* EDUCATION */
