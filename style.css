@@ -358,36 +358,40 @@ form button {
   cursor: pointer;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
 
   .menu-toggle {
     display: block;
   }
 
+  .navbar {
+    position: relative;
+  }
+
   .navbar nav {
     position: absolute;
-    top: 70px;
-    right: 20px;
+    top: 100%; /* INI KUNCI → DI BAWAH NAVBAR */
+    left: 0;
+    width: 100%;
     background: var(--cream);
-    width: 200px;
     display: none;
     flex-direction: column;
     padding: 20px;
-    border-radius: 15px;
+  }
+
+  .navbar nav a {
+    margin: 10px 0;
+    text-align: left;
   }
 
   .navbar nav.active {
     display: flex;
   }
 
-  .home-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .skills-grid,
-  .services-grid,
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
